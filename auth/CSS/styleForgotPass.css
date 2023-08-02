@@ -1,0 +1,172 @@
+*{
+    font-family: 'poppins';
+}
+:root{
+    --color-default:#004f83;
+    --color-second:#0067ac;
+    --color-white:#fff;
+    --color-body:#e4e9f7;
+    --color-light:#e0e0e0;
+    --color-black:black;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: var(--color-second);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+label{
+    font-size: 11pt;
+}
+
+#forgot-pass{
+    color: var(--color-black);
+    font-size: 10pt;
+    margin-top: 3px;
+    text-align: right;
+}
+
+#Card{
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: auto;
+    margin: 6rem auto 8.1rem auto;
+    width: 329px;
+}
+
+#Card-content{
+    padding: 12px 44px;
+}
+
+#Card-title{
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.back{
+    display: inline-block;
+    position: relative;
+    margin-left: 70px;
+    color: var(--color-second);
+    font-size: 10pt;
+}
+.back::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+} 
+.back:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#submit-btn{
+    background: var(--color-default);
+    border-radius: 21px;
+    border: none;
+    box-shadow: 0px 1px 7px grey;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;
+}
+
+#submit-btn:hover{
+    box-shadow: 0px 1px 16px grey;
+    background: var(--color-second);
+}
+
+.form{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+.form-border{
+    height: 1px;
+    width: 100%;
+    background: -webkit-linear-gradient(bottom, #3498db, #9b59b6);
+}
+
+.form-content{
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+}
+
+.underline-title{
+    background: -webkit-linear-gradient(bottom, #3498db, #9b59b6);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 230px;
+    margin-left: 5px;
+}
+
+#login-rejected{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #C0392B;
+    background-color: rgba(241, 148, 138, 0.6);
+    border-radius: 10px;
+    font-size: 8pt;
+    width: 200px;
+    margin: 0 auto;
+}
+#login-rejected button{
+    display: flex;
+    margin-top: 3px;
+    margin-left: 175px;
+    margin-bottom: 0;
+    width: 9%;
+    height: 15px;
+    font-size: 8pt;
+    justify-content: center;
+    align-items: center;
+    color: #C0392B;
+    border: 1px solid #C0392B;
+    border-radius: 10px;
+    background: #fbfbfb;
+}
+.failed-1{
+    margin-top: -17px;
+    margin-bottom: 0;
+}
+.failed-2{
+    margin: 0 auto 3px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+@media (max-width: 1280px){
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .Card{
+        width: 100px;
+    }
+}

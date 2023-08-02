@@ -1,0 +1,177 @@
+*{
+    font-family: 'poppins';
+}
+:root{
+    --color-default:#004f83;
+    --color-second:#0067ac;
+    --color-white:#fff;
+    --color-body:#e4e9f7;
+    --color-light:#e0e0e0;
+    --color-black:black;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: var(--color-second);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+label{
+    font-size: 11pt;
+    margin: -5;
+}
+
+#forgot-pass{
+    color: var(--color-second);
+    font-size: 10pt;
+    margin-top: 3px;
+    text-align: right;
+}
+#Card{
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: auto;
+    margin: 6rem auto 8.1rem auto;
+    width: 329px;
+}
+#Card-title{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Card-content{
+    padding: 12px 44px;
+}
+.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.show-hide{
+    cursor: pointer;
+}
+#unhide{
+    cursor: pointer;
+}
+#preview{ 
+    border-radius: 50%;
+}
+.label-upload{
+    margin-top: 40px;
+    justify-content: left;
+}
+.label-upload i{
+    margin-left: -5;
+}
+.upload{
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-second);
+    margin-left: 3px;
+    color: #fbfbfb;
+    overflow: hidden;
+    border: 0;
+    margin-bottom: 3px;
+}
+.upload input[type = "file"]{
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: scale(5);
+    opacity: 0;
+}
+#login{
+    color: var(--color-second);
+    font-size: 10pt;
+    margin-top: 13px;
+    text-align: center;
+}
+
+#submit-btn{
+    background: var(--color-default);
+    border-radius: 21px;
+    border: none;
+    box-shadow: 0px 1px 7px grey;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: 0.25s;
+    width: 153px;
+}
+
+#submit-btn:hover{
+    box-shadow: 0px 1px 16px grey;
+    background-color: var(--color-second);
+}
+
+.form{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.form-border{
+    height: 1px;
+    width: 100%;
+    background: var(--color-second);
+}
+
+.form-content{
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+}
+
+.underline-title{
+    background: var(--color-second);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 110px;
+}
+label .fa-camera{
+    margin-left: -3px;
+    margin-right: 4px;
+}
+label .fa-house{
+    margin-right: 3px;
+}
+label .fa-address-card{
+    margin-right: 3px;
+}
+label .fa-phone{
+    margin-right: 4px;
+}
+label .fa-envelope{
+    margin-right: 4px;
+}
+label .fa-location-dot{
+    margin-left: 2px;
+    margin-right: 4px;
+}
+label .fa-key{
+    margin-right: 3px;
+}
+
+@media (max-width: 1280px){
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .Card{
+        width: 100px;
+    }
+}
